@@ -1,5 +1,5 @@
 {
-  "family": "hadiya-task",
+  "family": "hadiya-project",
   "containerDefinitions": [
     {
       "name": "hadiya",
