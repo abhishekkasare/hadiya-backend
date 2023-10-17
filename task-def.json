@@ -5,8 +5,7 @@
         "containerDefinitions": [
             {
                 "name": "hadiya",
-                "image": "358905043627.dkr.ecr.us-east-2.amazonaws.com/hadiya-ecr:latest"
-              ",
+                "image": "358905043627.dkr.ecr.us-east-2.amazonaws.com/hadiya-ecr:latest",
                 "portMappings": [
                     {
                         "containerPort": 3000,
