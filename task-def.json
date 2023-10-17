@@ -1,0 +1,33 @@
+ {
+        "family": "hadiya-project",
+        "networkMode": "awsvpc",
+        "executionRoleArn": "arn:aws:iam::358905043627:role/ecs-task-execution-role", 
+        "containerDefinitions": [
+            {
+                "name": "hadiya",
+                "image": "358905043627.dkr.ecr.us-east-2.amazonaws.com/hadiya-ecr:latest"
+              ",
+                "portMappings": [
+                    {
+                        "containerPort": 3000,
+                        "hostPort": 3000,
+                        "protocol": "tcp"
+                    }
+                ],
+                "essential": true,
+                "entryPoint": [
+                    "sh",
+                    "-c"
+                ],
+                "command": [
+                     "--config=/etc/ecs/ecs-cloudwatch.yaml" 
+                ]
+            }
+        ],
+        "requiresCompatibilities": [
+            "FARGATE"
+        ],
+        "cpu": "1024",
+        "memory": "2048"
+}
+
